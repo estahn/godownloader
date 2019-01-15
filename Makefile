@@ -10,11 +10,4 @@ install: ## Install godownloader
 generate: ## Generate godownloader scripts
 	godownloader --tree=tree
 
-commit: ## Commit godownloader scripts
-	git add .
-	git commit -m 'chore: update godownloader scripts' .
-
-push: ## Push godownloader scripts
-	git push
-
-all: install generate commit push
+all: install generate
